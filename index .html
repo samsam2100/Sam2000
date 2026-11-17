@@ -1,0 +1,110 @@
+<!doctype html><html lang="ar" dir="rtl"><head><meta charset="utf-8"><meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover"><title>مغامرة العلوم – الفصل الثاني</title><style>
+:root{--bg:#fff6c9;--card:#fff;--pk:#ffd3e6;--bl:#cfe8ff;--tx:#3b3550;--ok:#c8f2d4;--no:#ffd9d9;box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);color-scheme:light}
+@media(prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#3a3558;--card:#4b4670;--pk:#7a4a68;--bl:#3f5f86;--tx:#fff7dd;--ok:#2f6a4a;--no:#7a3b45;color-scheme:dark}}
+:root[data-theme="dark"]{--bg:#3a3558;--card:#4b4670;--pk:#7a4a68;--bl:#3f5f86;--tx:#fff7dd;--ok:#2f6a4a;--no:#7a3b45;color-scheme:dark}
+html{scroll-padding-top:env(safe-area-inset-top,0px)}*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--tx);font-family:"Segoe UI",Tahoma,"Noto Naskh Arabic",sans-serif;font-size:17px}
+#a{max-width:680px;margin:auto;padding:14px}h1{text-align:center;margin:6px 0;font-size:24px}p{margin:6px 0}
+.c{background:var(--card);border-radius:22px;padding:14px;margin:12px 0;box-shadow:0 4px 0 var(--pk)}
+.b{display:block;width:100%;border:0;border-radius:16px;padding:12px;margin:7px 0;font:inherit;background:var(--bl);color:var(--tx);cursor:pointer;box-shadow:0 3px 0 rgba(0,0,0,.12)}
+.b.on{background:var(--pk);font-weight:700}.b.ok{background:var(--ok)}.b.no{background:var(--no)}.row{display:flex;gap:8px}.row .b{flex:1}
+input,select,textarea{width:100%;font:inherit;padding:10px;border-radius:14px;border:2px solid var(--pk);background:var(--card);color:var(--tx);margin:4px 0}
+.bar{height:12px;background:var(--card);border-radius:9px;overflow:hidden}.bar i{display:block;height:100%;background:var(--pk)}
+.sm{font-size:13px;opacity:.8;text-align:center}.tw{overflow-x:auto}table{border-collapse:collapse;font-size:13px;width:100%}td,th{border:1px solid var(--pk);padding:4px;text-align:center}
+.g{background:var(--ok)}.r{background:var(--no)}.y{background:var(--bg)}.box{font-size:44px;background:none;width:auto;display:inline-block}
+.st{position:fixed;font-size:26px;pointer-events:none;animation:fl 1.2s ease-out forwards;z-index:9}@keyframes fl{to{transform:translateY(-240px) rotate(200deg);opacity:0}}</style></head><body><div id="a"></div><script>
+const Z=(x,k)=>Object.assign(x,{s:k}),M=(q,o,k)=>Z(['m',q,o,0],k),T=(q,a,k)=>Z(['t',q,a],k),P=(p,k)=>Z(['p',p],k),C=(t,c,i,k)=>Z(['c',t,c,i],k),O=(t,a,k)=>Z(['o',t,a],k);
+const D=[
+{n:'الحيوانات اللافقارية',pg:56,r:'اللافقاريات حيوانات بلا عمود فقري؛ للحشرة ست أرجل وجسمها ثلاثة أجزاء، وللعنكبوت ثماني أرجل، ومن اللافقاريات الرخويات كالحلزون.',a:'ابحثي عن ٥ لافقاريات وارسمي عدد أرجل كل منها وصنّفيها في جدول.',e:'قارني بين الحشرة والعنكبوت بمخطط فن، واكتبي ٣ فروق.',q:[
+M('اللافقاريات حيوانات ليس لها…',['عمود فقري','عيون','غذاء'],'تعريف اللافقاريات'),
+M('أي حيوان مما يلي لافقاري؟',['الفراشة','القطة','السمكة'],'أمثلة اللافقاريات'),
+T('لجميع الحشرات ست أرجل.',true,'خصائص الحشرات'),
+T('العنكبوت حشرة.',false,'العنكبوت'),
+P([['الحشرات','ست أرجل'],['العنكبوت','ثماني أرجل'],['الدودة','جسم لين طويل']],'خصائص المجموعات'),
+C('هل هو حشرة؟',['حشرة','ليس حشرة'],[['النحلة',0],['العنكبوت',1],['الفراشة',0],['العقرب',1],['النملة',0]],'تمييز الحشرات'),
+O('رتّبي مراحل حياة الفراشة:',['بيضة','يرقة','شرنقة','فراشة'],'دورة حياة الفراشة'),
+M('🧩 لغز: لي ست أرجل وجناحان وأحط على الزهور، من أنا؟',['الحشرة','الأسد','الحوت'],'خصائص الحشرات'),
+M('أي حيوان جسمه رخو وله صدفة؟',['الحلزون','النحلة','النملة'],'الرخويات'),
+M('ينقسم جسم الحشرة إلى…',['ثلاثة أجزاء','جزأين','جزء واحد'],'أجزاء جسم الحشرة')]},
+{n:'الحيوانات الفقارية',pg:66,r:'الفقاريات لها عمود فقري وتنقسم إلى خمس فئات: أسماك (خياشيم)، برمائيات، زواحف (حراشف)، طيور (ريش)، ثدييات (ترضع صغارها).',a:'اصنعي بطاقة لكل فئة من الفئات الخمس مع مثال وصفة مميزة.',e:'اختاري حيوانًا غريبًا (كالخفاش) وأثبتي فئته بثلاث صفات.',q:[
+M('الفقاريات حيوانات لها…',['عمود فقري','أجنحة دائمًا','قشور دائمًا'],'تعريف الفقاريات'),
+M('أي حيوان مما يلي من الثدييات؟',['الحوت','الضفدع','الصقر'],'الثدييات'),
+T('ترضع الثدييات صغارها الحليب.',true,'الثدييات'),
+T('الأسماك تتنفس بالرئتين.',false,'تنفس الأسماك'),
+P([['الأسماك','تتنفس بالخياشيم'],['الطيور','جسمها مغطى بالريش'],['الزواحف','جلدها جاف مغطى بالحراشف']],'خصائص الفئات'),
+C('ثدييات أم طيور؟',['ثدييات','طيور'],[['القطة',0],['النسر',1],['الحصان',0],['البطريق',1],['الدلفين',0]],'تصنيف الفقاريات'),
+O('رتّبي مراحل حياة الضفدع:',['بيضة','شرغوف','ضفدع صغير','ضفدع بالغ'],'دورة حياة البرمائيات'),
+M('🧩 لغز: أضع بيضًا وجلدي حراشف وأزحف على بطني، من أنا؟',['الزواحف','الثدييات','الطيور'],'الزواحف'),
+M('أي حيوان من البرمائيات؟',['الضفدع','السحلية','السمكة'],'البرمائيات'),
+M('أي فئة تضع بيضًا ولها ريش؟',['الطيور','الثدييات','الأسماك'],'الطيور')]},
+{n:'أجهزة أجسام الحيوانات',pg:76,r:'لكل جهاز في جسم الحيوان وظيفة: التنفسي يأخذ الأكسجين (خياشيم أو رئتان)، الدوري ينقل الدم بالقلب، الهضمي يحلّل الطعام.',a:'ارسمي حيوانًا وحددي مكان الرئتين والقلب والمعدة بأسهم.',e:'قارني بين تنفس السمكة وتنفس القطة في جدول من ٣ فروق.',q:[
+M('بأي عضو تتنفس الأسماك؟',['الخياشيم','الرئتان','الأجنحة'],'التنفس في الأسماك'),
+M('أي عضو يضخ الدم في الجسم؟',['القلب','المعدة','الدماغ'],'الدورة الدموية'),
+T('تتنفس معظم الثدييات بالرئتين.',true,'الجهاز التنفسي'),
+T('الدماغ يتحكم في أعضاء الجسم.',true,'الجهاز العصبي'),
+P([['الجهاز التنفسي','يأخذ الأكسجين'],['الجهاز الهضمي','يحلّل الطعام'],['الجهاز الدوري','ينقل الدم']],'وظائف الأجهزة'),
+C('بماذا يتنفس؟',['بالخياشيم','بالرئتين'],[['السمكة',0],['القطة',1],['الحصان',1],['القرش',0]],'أعضاء التنفس'),
+O('رتّبي مسار الطعام في الجسم:',['الفم','المريء','المعدة','الأمعاء'],'الجهاز الهضمي'),
+M('🧩 لغز: أنا عضو أضخ الدم لكل الجسم، من أنا؟',['القلب','المعدة','الرئة'],'الدورة الدموية')]}];
+const RK={p:0,t:0,m:1,c:2,o:2},CH=['🧩 التحدي الأول: صنّفي ووصّلي','🔍 التحدي الثاني: ألغاز وفهم','🎯 التحدي الثالث: اسحبي وركّبي'];D.forEach(L=>L.q.sort((a,b)=>RK[a[0]]-RK[b[0]]));
+const V=(bg,pk,bl)=>({'--bg':bg,'--pk':pk,'--bl':bl,'--tx':'#3b3550','--card':'#fff','--ok':'#c8f2d4','--no':'#ffd9d9'});
+Object.assign(D[0],{ic:'🕵️‍♀️',th:{h:'🕵️‍♀️🐛',s:'أنتِ محققة اللافقاريات! في حديقة المدرسة اختفت حشرة صغيرة، وتركت أدلة غريبة. اجمعي الأدلة بإجاباتك الصحيحة لتحلّي لغز الحشرة المفقودة.',v:V('#fff6d6','#ffd9bd','#d8f2df'),ok:['رائعة يا محققة، دليل جديد!','عين ذكية يا بطلة التحقيق!','أحسنتِ! اقتربتِ من حل اللغز!'],no:['حاولي مرة أخرى يا محققة، أنتِ قريبة من الدليل!','لا بأس، المحققات الشاطرات يعدن البحث!']}});
+Object.assign(D[1],{ic:'🚙',th:{h:'🚙🦒',s:'أنتِ مرشدة رحلة السفاري! الزوار ينتظرونك لتعرّفيهم على حيوانات الغابة والبحر والسماء. أجيبي لتفتحي بوابات الرحلة واحدة تلو الأخرى.',v:V('#e8f0ff','#e3d6ff','#d6f5ee'),ok:['رائعة يا مرشدة السفاري!','الزوار يصفّقون لك!','محطة جديدة تنفتح أمامك!'],no:['حاولي مرة أخرى يا مرشدة، أنتِ قريبة جدًا من الحل!','لا بأس، الرحلة ما زالت ممتعة!']}});
+Object.assign(D[2],{ic:'🩺',th:{h:'🩺🐠',s:'أنتِ طبيبة الحيوانات! في عيادتك مرضى صغار ينتظرون فحصك. افحصي أجهزة أجسامهم بإجاباتك لتعيدي لهم الصحة.',v:V('#ffe9ee','#ffd2dd','#d4efff'),ok:['رائعة يا دكتورة الحيوانات!','فحص دقيق يا بطلة!','المريض الصغير يشكرك!'],no:['حاولي مرة أخرى يا دكتورة، أنتِ قريبة جدًا من التشخيص!','لا بأس، الطبيبات الماهرات يعدن الفحص!']}});
+const pk=a=>a[Math.floor(Math.random()*a.length)];
+function ap(t){Object.entries(t.v).forEach(([k,v])=>document.documentElement.style.setProperty(k,v))}
+function bst(){for(let i=0;i<12;i++){const e=document.createElement('span');e.className='st';e.textContent=i%3?'⭐':'✨';e.style.left=(10+Math.random()*80)+'%';e.style.top=(45+Math.random()*25)+'%';document.body.appendChild(e);setTimeout(()=>e.remove(),1300)}}
+function intro(){const L=D[cur.l];H(`<div class="c" style="text-align:center"><div style="font-size:60px">${L.th.h}</div><h2>${L.n}</h2><p>${L.th.s}</p><p class="sm">٣ تحديات: صنّفي ووصّلي ⬅️ ألغاز ⬅️ اسحبي وركّبي</p><button class="b on" onclick="show()">ابدئي المغامرة 🚀</button></div>`)}
+function dg(e){const c=e.currentTarget;c.setPointerCapture(e.pointerId);const x=e.clientX,y=e.clientY;c.onpointermove=m=>{c.style.transform=`translate(${m.clientX-x}px,${m.clientY-y}px)`};c.onpointerup=u=>{c.onpointermove=null;c.style.visibility='hidden';const t=document.elementFromPoint(u.clientX,u.clientY);c.style.visibility='';const z=t&&t.closest('[data-j]');z?ct(+z.dataset.j):c.style.transform=''}}
+const S=[['المملكة الحيوانية','🐾',[0,1,2]]];
+const MS=['🌟 أحسنتِ يا عالمة!','🏅 نجمة ذهبية لك!','🎈 رائعة جدًا!','🦄 عقلك مبدع!','🍭 حلوة الإجابة!'];
+let st={name:'',mode:'solo',g:[0,0,0,0,0],res:{},code:[]},cur,A=document.getElementById('a'),db=null,H=s=>A.innerHTML=s;
+const sh=a=>a.map(x=>[Math.random(),x]).sort((x,y)=>x[0]-y[0]).map(x=>x[1]);
+(async()=>{try{db=await claude.use('db')}catch(e){}})();
+function home(){document.documentElement.removeAttribute('style');const nm=document.getElementById('nm');if(nm)st.name=nm.value;
+H(`<h1>🌈 مغامرة العلوم</h1><p class="sm">الصف الرابع – الفصل الثاني – ٣ دروس</p><div class="c"><input id="nm" placeholder="اكتبي اسمك يا بطلة ✏️" value="${st.name}"><div class="row"><button class="b ${st.mode=='solo'?'on':''}" onclick="md('solo')">👧 فردي</button><button class="b ${st.mode=='grp'?'on':''}" onclick="md('grp')">👭 جماعي (٥ مجموعات)</button></div></div>`+
+S.map((s,i)=>`<div class="c"><b>${s[1]} الفصل الثاني: ${s[0]}</b>`+s[2].map(l=>{const r=st.res[l];return `<button class="b ${r?'ok':''}" onclick="go(${l})">${D[l].ic} ${D[l].n}${r?' ⭐ '+r.p+'٪':''}</button>`}).join('')+`</div>`).join('')+
+(st.mode=='grp'?`<div class="c">${sc()}<button class="b" onclick="st.g=[0,0,0,0,0];home()">🔄 تصفير النقاط</button></div>`:'')+
+`<button class="b" onclick="tch()">📊 لوحة المعلمة</button><p class="sm">المعلمة سامية الشهري – المدرسة الابتدائية السابعة والأربعون</p>`)}
+function md(m){st.mode=m;home()}
+const sc=()=>'<b>🏆 نقاط المجموعات</b><div class="row">'+st.g.map((v,i)=>`<div class="b on" style="text-align:center">م${i+1}<br>${v}</div>`).join('')+'</div>';
+function go(l){const nm=document.getElementById('nm');if(nm)st.name=nm.value.trim();if(st.mode=='solo'&&!st.name){alert('اكتبي اسمك أولًا 😊');return}cur={l,i:0,s:0,w:[]};ap(D[l].th);intro()}
+function show(){const L=D[cur.l],q=L.q[cur.i],n=L.q.length,t=st.mode=='grp'?`<p class="sm">🎯 دور المجموعة ${cur.i%5+1}</p>`:'';cur.done=0;cur.k=0;cur.ok=1;cur.a=[];
+let b='',tx=q[1];
+if(q[0]=='m'){cur.o=sh([0,1,2]);b=cur.o.map(k=>`<button class="b" onclick="ans(${k},this)">${q[2][k]}</button>`).join('')}
+else if(q[0]=='t')b=`<div class="row"><button class="b" onclick="ans(true,this)">✔️ صح</button><button class="b" onclick="ans(false,this)">❌ خطأ</button></div>`;
+else if(q[0]=='p'){tx='طابقي كل عنصر بما يناسبه:';cur.sf=sh(q[1].map(x=>x[1]));b=q[1].map((x,k)=>`<p>🧩 ${x[0]}</p><select id="s${k}"><option value="">اختاري…</option>${cur.sf.map(o=>`<option>${o}</option>`).join('')}</select>`).join('')+`<button class="b on" onclick="ans(0)">تحقق ✅</button>`}
+else if(q[0]=='c')b=cc();else{cur.sf=sh(q[2].map((x,i)=>i));b=oo()}
+H(`<p class="sm"><b>${CH[RK[q[0]]]}</b></p><div class="bar"><i style="width:${cur.i/n*100}%"></i></div><p class="sm">${L.n} – سؤال ${cur.i+1} من ${n}</p>${t}<div class="c"><b>${q[0]=='t'?'صح أم خطأ؟ ':''}${tx}</b> <button class="b" style="display:inline;width:auto;padding:4px 10px" onclick="spk()">🔊</button><div id="q">${b}</div><div id="f"></div><button class="b" onclick="document.getElementById('hn').textContent='💡 راجعي الدرس في الكتاب صفحة ${L.pg}'">💡 تلميح</button><p id="hn" class="sm"></p></div>`)}
+function cc(){const q=D[cur.l].q[cur.i],it=q[3][cur.k];return it?`<p id="dc" class="c" style="touch-action:none;cursor:grab;text-align:center;font-size:26px" onpointerdown="dg(event)">${it[0]}</p><p class="sm">👆 اسحبيها إلى الصندوق المناسب أو اضغطيه</p><div class="row">${q[2].map((c,j)=>`<button class="b" data-j="${j}" onclick="ct(${j})">📥 ${c}</button>`).join('')}</div><p class="sm">${cur.k+1} / ${q[3].length}</p>`:''}
+function ct(j){const q=D[cur.l].q[cur.i];if(q[3][cur.k][1]!=j)cur.ok=0;cur.k++;q[3][cur.k]?document.getElementById('q').innerHTML=cc():ans(cur.ok)}
+function oo(){const q=D[cur.l].q[cur.i];return `<p>${cur.a.length?cur.a.map(x=>q[2][x]).join(' ⬅️ '):'اضغطي على البطاقات بالترتيب 👇'}</p>`+cur.sf.filter(i=>!cur.a.includes(i)).map(i=>`<button class="b" onclick="cur.a.push(${i});document.getElementById('q').innerHTML=oo()">${q[2][i]}</button>`).join('')+`<div class="row"><button class="b" onclick="cur.a=[];document.getElementById('q').innerHTML=oo()">↩️ مسح</button><button class="b on" onclick="ans(0)">تحقق ✅</button></div>`}
+function spk(){try{const q=D[cur.l].q[cur.i];const u=new SpeechSynthesisUtterance(q[0]=='p'?'طابقي كل عنصر بما يناسبه':q[1]);u.lang='ar-SA';speechSynthesis.speak(u)}catch(e){}}
+function ans(v,el){if(cur.done)return;cur.done=1;const L=D[cur.l],q=L.q[cur.i];let ok,x='';
+if(q[0]=='m'){ok=v===q[3];[...document.querySelectorAll('#q .b')].forEach(e=>{if(e.textContent==q[2][q[3]])e.classList.add('ok')});if(!ok)el.classList.add('no')}
+else if(q[0]=='t'){ok=v===q[2];el.classList.add(ok?'ok':'no')}
+else if(q[0]=='p'){ok=q[1].every((y,k)=>document.getElementById('s'+k).value==y[1]);q[1].forEach((y,k)=>{const s=document.getElementById('s'+k);s.className=s.value==y[1]?'g':'r'})}
+else if(q[0]=='c')ok=!!v;
+else{ok=cur.a.length==q[2].length&&cur.a.every((y,i)=>y==i);if(!ok)x='<p>الترتيب الصحيح: '+q[2].join(' ⬅️ ')+'</p>'}
+if(ok){bst();cur.s++;if(st.mode=='grp')st.g[cur.i%5]++}else cur.w.push(q.s||L.sk[cur.i]);
+document.getElementById('f').innerHTML=(ok?'<p>🏅 '+pk(L.th.ok)+' اختاري صندوقًا:</p><div id="bx"><button class="b box" onclick="bx(this)">🎁</button><button class="b box" onclick="bx(this)">🎁</button><button class="b box" onclick="bx(this)">🎁</button></div>':'<p>💗 '+pk(L.th.no)+'</p>'+x)+`<button class="b on" onclick="nx()">التالي ⬅️</button>`}
+function bx(e){document.getElementById('bx').innerHTML=`<div class="b ok" style="text-align:center">🎁 ${MS[Math.floor(Math.random()*MS.length)]}</div>`}
+function nx(){cur.i++;cur.i<D[cur.l].q.length?show():fin()}
+async function fin(){const L=D[cur.l],n=L.q.length,p=Math.round(cur.s/n*100),lv=p<60?'r':p<80?'y':'e',ms=[...new Set(cur.w)],all=[...new Set(L.q.map((x,i)=>x.s||L.sk[i]))];
+if(st.mode=='grp'){H(`<div class="c"><h1>🎊 انتهى الدرس!</h1>${sc()}<button class="b on" onclick="home()">العودة للخريطة 🗺️</button></div>`);return}
+st.res[cur.l]={p,lv,ms};const rec={name:st.name,l:cur.l,p,lv,ms},code=btoa(unescape(encodeURIComponent(JSON.stringify(rec))));
+try{if(db){const u=await claude.use('user');db.collection('results').doc(await u.id()).set({name:st.name,res:st.res}).catch(()=>{})}}catch(e){}
+const ck=t=>`<label style="display:block;margin:8px 0"><input type="checkbox" style="width:auto"> ${t}</label>`;
+const tb='<table>'+all.map(k=>`<tr><td style="text-align:right">${k}</td><td class="${ms.includes(k)?'r':'g'}">${ms.includes(k)?'❌ أحتاج تدريبًا':'✅ متقنة'}</td></tr>`).join('')+'</table>';
+const m0=ms[0]||L.n;
+const rem=`<div class="c" style="background:var(--no)"><h3>🩹 خطتي العلاجية</h3><p>${L.r}</p>${ck('اقرئي الدرس صفحة '+L.pg+' بصوت عالٍ')}${ck('نفّذي: '+L.a)}${ck('اشرحي «'+m0+'» لزميلتك أو لأمك')}${ck('أعيدي لعب الدرس لتصلي إلى ٨٠٪')}</div>`;
+const sup=`<div class="c" style="background:var(--bg)"><h3>🧱 خطة التثبيت</h3>${ck('راجعي: '+(ms.join('، ')||L.n)+' (ص '+L.pg+')')}${ck('نفّذي: '+L.a)}${ck('أعيدي اللعب لتصلي إلى ٨٠٪ وتفتحي الإثراء 🚀')}</div>`;
+const enr=`<div class="c" style="background:var(--ok)"><h3>🚀 تحدّي الإثراء</h3>${ck('تحدي ١: '+L.e)}${ck('تحدي ٢: ابتكري سؤالًا صعبًا عن «'+L.n+'» وتبادليه مع زميلتك')}${ck('تحدي ٣: اصنعي بطاقة أو عرضًا مصغّرًا (دقيقة) تشرحين به الدرس')}</div>`;
+H(`<div class="c"><h1>${L.th.h} ${p}٪</h1><p>صحيح ${cur.s} من ${n} · ${lv=='r'?'مسارك: علاجي 🩹':lv=='y'?'مسارك: تثبيت 🧱':'مسارك: إثرائي 🚀'}</p><b>مهاراتي في هذا الدرس:</b>${tb}</div>${lv=='r'?rem:lv=='y'?sup+'<p class="sm">🔒 الإثراء يُفتح عند ٨٠٪</p>':enr}<div class="c"><p class="sm">رمز النتيجة (للمعلمة إن تعذّر الإرسال):</p><textarea readonly rows="2">${code}</textarea><button class="b" onclick="go(${cur.l})">🔁 إعادة المحاولة</button><button class="b on" onclick="home()">العودة للخريطة 🗺️</button></div>`)}
+async function tch(){let rows=[...st.code];try{if(db){const s=await db.collection('results').get();s.docs.forEach(d=>{const v=d.data();Object.entries(v.res||{}).forEach(([l,r])=>rows.push({name:v.name,l:+l,...r}))})}}catch(e){}
+rows.push(...Object.entries(st.res).map(([l,r])=>({name:st.name,l:+l,...r})));
+const m={};rows.forEach(r=>{(m[r.name]=m[r.name]||{})[r.l]=r});
+const tb=Object.entries(m).map(([nm,x])=>{let ms=new Set,r=0,e=0;const c=D.map((_,l)=>{const v=x[l];if(!v)return'<td>–</td>';v.ms.forEach(k=>ms.add(k));v.lv=='r'?r++:v.lv=='e'&&e++;return`<td class="${v.lv=='r'?'r':v.lv=='y'?'y':'g'}">${v.p}</td>`}).join('');return`<tr><td>${nm}</td>${c}<td>${r?'🩹 علاج '+r:''}${e?' 🚀 إثراء '+e:''}</td><td style="text-align:right">${[...ms].join('، ')}</td></tr>`}).join('');
+H(`<div class="c"><h1>📊 لوحة المعلمة</h1><p class="sm">🟥 علاج (&lt;٦٠) · 🟨 تثبيت · 🟩 إثراء (≥٨٠)</p><div class="tw"><table><tr><th>الطالبة</th>${D.map((_,i)=>`<th>د${i+1}</th>`).join('')}<th>المسار</th><th>المهارات المفقودة</th></tr>${tb||'<tr><td colspan="16">لا نتائج بعد</td></tr>'}</table></div><p class="sm">لصق رمز نتيجة طالبة:</p><textarea id="cd" rows="2"></textarea><button class="b" onclick="try{st.code.push(JSON.parse(decodeURIComponent(escape(atob(document.getElementById('cd').value.trim())))));tch()}catch(e){alert('الرمز غير صحيح')}">إضافة</button><button class="b on" onclick="home()">رجوع</button></div>`)}
+home();
+</script></body></html>
